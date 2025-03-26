@@ -1,0 +1,115 @@
+body * {
+  outline: 1px dashed cornflowerblue;
+}
+
+.button {
+  border: none;
+  color: whitesmoke;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  background-color: red;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 5%;
+  height: 5%;
+}
+
+.section-one {
+  background-image: url(WizbangSite/assets/items.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  margin: 5em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+.section-three {
+  background-color: black;
+  padding: 10px;
+  justify-content: center;
+
+  img {
+    width: 50%;
+  }
+
+  display: flex;
+  margin: 5px;
+  font-style: italic;
+  align-content: flex-end;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  background-color: tan;
+  width: 400px;
+  display: flex;
+  padding: 10px;
+}
+
+.section-four {
+  background-image: url(/WizbangsSite/WizbangSite/assets/waterColorStain2.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+
+  img {
+    width: 50em;
+  }
+}
+
+.section-five {
+  display: flex;
+  flex-wrap: flex;
+  padding: 10px;
+  margin: 5px;
+  justify-content: center;
+
+  img {
+    width: 50em;
+  }
+}
+
+.section-six {
+  display: flex;
+  flex-wrap: flex;
+  padding: 10px;
+  margin: 5px;
+  justify-content: center;
+
+  img {
+    width: 50em;
+  }
+}
+
+.section-seven {
+  background-color: black;
+  display: flex;
+  flex-wrap: flex;
+  padding: 10px;
+  margin: 5px;
+  justify-content: center;
+
+  img {
+    width: 50em;
+  }
+}
