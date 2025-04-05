@@ -2,7 +2,15 @@ let playerChoice = '?'
 let cpuChoice = '?'
 let playerImg = document.getElementById('player-choice')
 let cpuImg = document.getElementById('cpu-choice')
+let winsDiv = document.getElementById('wins')
+let tiesDiv = document.getElementById('ties')
+let losesDiv = document.getElementById('loses')
 
+function drawScoreboard() {
+  winsDiv.textContent = state.wins
+  tiesDiv.textContent = state.ties
+  losesDiv.textContent = state.loses
+}
 
 
 function rock() {
@@ -15,12 +23,14 @@ function rock() {
 function paper() {
   console.log('user chose paper');
   playerChoice = 'paper';
+  playerImg.src = 'paper.png';
   randomCpuChoice();
 }
 
 function scissors() {
   console.log('user chose scissors');
   playerChoice = 'scissors';
+  playerImg.src = 'scissors.png';
   randomCpuChoice();
 }
 
@@ -29,6 +39,7 @@ function randomCpuChoice() {
   let options = ['rock', 'paper', 'scissors'];
   let random = options[Math.floor(Math.random() * 3)];
   cpuChoice = random;
+  cpuImg.src = random + ' .png';
   console.log('🤖 picks', cpuChoice);
   playGame();
 }
@@ -50,6 +61,7 @@ function playGame() {
     console.log('You lose!');
     state.loses += 1;
   }
+  drawScoreboard();
 }
 
 let state = {
